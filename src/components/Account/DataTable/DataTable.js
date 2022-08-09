@@ -43,7 +43,7 @@ const rows = [
 export default function CustomizedTables() {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table sx={{ width: '100%' }} aria-label="customized table">
         <TableHead>
           <TableRow>
             <StyledTableCell>Sensor ID</StyledTableCell>

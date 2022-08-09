@@ -11,6 +11,7 @@ import TextField from "@mui/material/TextField";
 import Box  from "@mui/material/Box";
 import Typography  from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 const SignIn = () => {
   const [values, setValues] = React.useState({
@@ -46,19 +47,18 @@ const SignIn = () => {
           minHeight: "100vh",
         }}
       >
-      
+      <Stack spacing={2}>
         <Typography variant="h2" gutterBottom sx={{mt: 3}} color='primary'>
           Sign In
         </Typography>
-          <Box>
+          
             <TextField
               label="email"
               id="outlined-start-adornment"
               sx={{ m: 1, width: "50ch" }}
               placeholder="email@email.com"
             />
-            </Box>
-            <Box>
+          
             <FormControl sx={{ m: 1, width: "50ch" }} variant="outlined">
               <InputLabel htmlFor="outlined-adornment-password">
                 Password
@@ -83,7 +83,8 @@ const SignIn = () => {
                 label="Password"
               />
             </FormControl>
-          </Box>
+       
+          </Stack>
           <Box>
               <Button variant="contained" color="primary" sx={{ p: 2, m: 3, width: "28ch" }}>
                   Sign In

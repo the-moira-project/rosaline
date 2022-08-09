@@ -28,7 +28,7 @@ const Account = () => {
             Account: 0000069
           </Typography>
         </Box>
-        <Box sx={{ mt: 3, py: 3 }}>
+        <Box sx={{ mt: 3, py: 3, width: '90vw' }}>
           <DataTable />
         </Box>
       </Grid>
